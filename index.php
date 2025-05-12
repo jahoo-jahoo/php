@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css1/boostap_layer.css">
+    <link rel="stylesheet" type="text/css" href="css/home_1.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container my-container">
+<header>
+                <?php include ('header.html')?>
+</header>
+    <div class="row my-row">
+    <div class="drop1">
+                    <span><button class="bbt"><img src="image/icon/icon1.png" id="icon_image"></button></span>
+                             <div class="drop_down">
+                                <h3 style="font-size: 35px;color: gray">Menu</a></h3>
+                                <p class="p_1"><a href="login.php" id="link_page">Login</a></p>
+                                <p class="p_1"><a href="signup.php" id="link_page">Register</a></p>
+                                <p class="p_1"><a href="ad_login.php" id="link_page">Admin</a></p>
+                                <p class="p_1"><a href="category.php" id="link_page">Store</a></p>
+                                <p class="p_1"><a href="about.php" id="link_page">Aboutus</a></p>
+                                <p class="p_1"><a href="contact.php" id="link_page">contact</a></p>
+                                
+                            </div>
+        </div>
+        <div class="my-col col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="image/logo/frozen.png" style="height: 120px;margin-top: 60px;">
+                <p class="cov-title">FROZEN</p>
+                <p><b style="font-size:20px">DOWN SOUTH'S FIRST ROLLED ICE CREAMERY</b><br>
+                We are an innovative ice cream shop which serves
+                fresh made-to-order ice cream KOTTU. Our process will
+                change the way that you think about ice cream. Fresh
+                ingredients are blended and rapidly frozen before your eyes.
+                Your customized ice cream is ready in just seconds. Each KOTTU 
+                of ice cream is a unique creation to please each customer taste. <br>
+                we are reinventing the ultimate ice cream experience..!
+                </p>
+                <br>
+                <div class="dropdown">
+                    <button id="button">User Account</button>
+                    <div class="dropdown-content">
+                        <a href="login.php">Login</a>
+                        <a href="signup.php">Register</a>
+                    </div>
+                </div>
+                
+                <a href="about.php"><button id="button">About us</button></a>
+                <a href="contact.php"><button id="button">Contact</button></a><br>
+
+                
+        </div>
+        
+
+                </br>
+                            <div class="my-col col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <br><br>
+                                <div class="nav1">
+                                    <p>Ice-cream &emsp; <a href="login.php"><button id="top_button">Store</button></a> &emsp; <a href="ad_login.php"><button id="top_button">Admin</button></a></p>
+                                </div>
+                                    
+                                <br>
+
+                                <div class="slideshow-container">
+
+                                <div class="mySlides fade">
+                                
+                                <img src="image/slideshow/slide1.png" style="width:100%">
+                                <div class="text">Best Ice Cream in the Valley, Perfect</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                
+                                <img src="image/slideshow/slide2.png" style="width:100%">
+                                <div class="text">Best Ice Cream in the Valley, Perfect</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                
+                                <img src="image/slideshow/slide3.png" style="width:100%">
+                                <div class="text">Best Ice Cream in the Valley, Perfect</div>
+                                </div>
+
+                                </div>
+                                <br>
+
+                                <div style="text-align:center">
+                                <span class="dot"></span> 
+                                <span class="dot"></span> 
+                                <span class="dot"></span> 
+                                </div>
+
+                                
+
+                            </div>
+
+</div>
+                            
+                            </div>
+</div>
+
+
+<script>
+                                var slideIndex = 0;
+                                showSlides();
+
+                                function showSlides() {
+                                var i;
+                                var slides = document.getElementsByClassName("mySlides");
+                                var dots = document.getElementsByClassName("dot");
+                                for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";  
+                                }
+                                slideIndex++;
+                                if (slideIndex > slides.length) {slideIndex = 1}    
+                                for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex-1].style.display = "block";  
+                                dots[slideIndex-1].className += " active";
+                                setTimeout(showSlides, 2000); // Change image every 2 seconds
+                                }
+                                </script>
+
+
+<?php include('footer.html');?>
+
+</body>
+</html>
