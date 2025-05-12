@@ -1,0 +1,43 @@
+
+
+#image_design{
+    width:150px;
+    height: 100px;
+    border-radius: 10px;
+}
+#tab{
+    width: auto;
+    border: 1px solid black;
+    text-align: center;
+}
+#tab td{
+    width: 160px;
+    border: 1px solid red;
+}
+
+#rem_1{
+    margin-left: 50%;
+}
+
+@media screen and (max-width:800px){
+    #image_design{
+        width:50px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    #tab{
+        width: auto;
+        text-align: center;
+        
+    }
+    #tab td{
+        width: 150px;
+        font-size: small;
+        text-align: end;
+    }
+    #rem_1{
+        margin-left: 30%;
+    }
+    
+}
